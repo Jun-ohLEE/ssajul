@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title> 띵동코딩-부트스트랩_인스타그램</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        body,h1,h2,h3,p,a {
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .instagram {
+            margin-bottom: 15px;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            width: 300px;
+            margin: 20px auto 0px auto;
+        }
+
+        .card-text {
+            font-size: 14px;
+        }
+
+        .card-text > span {
+            font-weight: 500;
+        }
+
+        .user {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .card-body > input {
+            border: none;
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 10px;
+        }
+
+        .icons > .bi-send {
+            margin-right: auto;
+        }
+
+        .icons > .bi-suit-heart {
+            margin-right: 10px;
+        }
+
+        .icons > .bi-chat {
+            margin-right: 10px;
+        }
+
+        .me {
+            width: 280px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 10px;
+        }
+
+        .me > img {
+            width: 25px;
+            height: 25px;
+
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+
+        .me > span {
+            font-size: 14px;
+            margin-right: auto;
+            font-weight: 500;
+        }
+
+        .feed {
+            font-size: 14px;
+        }
+
+        .comment {
+            color: gray;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .comments {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .comments > .comment-name {
+            font-size: 14px;
+            font-weight: 500;
+
+            margin-right: 10px;
+        }
+
+        .comments > .comment-msg {
+            margin-right: auto;
+            font-size: 14px;
+        }
+
+        .comments > .bi-heart-fill {
+            color: red;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="instagram">
+            <img src="https://fontmeme.com/temporary/c5c5f32939132d321c1a23111661121b.png">
+        </div>
+        <div class="me">
+            <img src="gaessibalnom.jpg">
+            <span>jongsub_gaessibal_lee</span>
+            <i class="bi bi-three-dots"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="gaessubalnom_tweet.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="icons">
+                <i class="bi bi-suit-heart"></i>
+                <i class="bi bi-chat"></i>
+                <i class="bi bi-send"></i>
+                <i class="bi bi-bookmark"></i>
+              </div>
+              <p class="card-text">
+                <span>2찍이들</span>을 제외한 <span>모든 국민이 싫어합니다</span></p>
+              <p class="user">jongsub_gaessibal_lee</p>
+              <p class="feed">
+                저는 일본국 국방부장관으로서 이 시간을 빌어 저의 소신을 지킬 것을 알립니다.<br/>
+                또한, 검찰에 요청하여 이 글을 쓴 사람을 찾아 명예훼손죄로 소송 제기할 것입니다.
+              </p>
+              <p class="comment">View all comments</p>
+              <div class="comments">
+                <span class="comment-name">nippon_banjai</span>
+                <span class="comment-msg">힘내십쇼. 응원합니다.</span>
+                <i class="bi bi-heart-fill"></i>
+              </div>
+              <input class="form-control form-control-sm" type="text" placeholder="comment" aria-label=".form-control-sm example">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
